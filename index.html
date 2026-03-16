@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TezReply | Premium AI Automation Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* === CORE STYLES === */
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #050B14; color: #E2E8F0; overflow-x: hidden; }
+        
+        /* === BRANDING === */
+        .text-emerald { color: #10B981; }
+        .bg-emerald { background-color: #10B981; }
+        .bg-deep { background-color: #0B192C; }
+        .gradient-text { background: linear-gradient(to right, #10B981, #2DD4BF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* === GLASSMORPHISM === */
+        .glass-nav { background: rgba(5, 11, 20, 0.8); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 24px; transition: transform 0.3s ease, border-color 0.3s ease; }
+        .glass-card:hover { border-color: rgba(16, 185, 129, 0.3); transform: translateY(-5px); }
+
+        /* === ANIMATIONS === */
+        .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Continuous Marquee */
+        .marquee { display: flex; overflow: hidden; white-space: nowrap; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); background: rgba(255,255,255,0.01); }
+        .marquee-content { display: flex; animation: scroll 20s linear infinite; gap: 4rem; padding-left: 4rem; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="fixed w-full top-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+                <div class="w-8 h-8 bg-emerald rounded flex items-center justify-center text-white shadow-[0_0_15px_rgba(16,185,129,0.5)]">T</div>
+                Tez<span class="font-light text-gray-400">Reply</span>
+            </a>
+            
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#services" class="hover:text-emerald transition">Services</a>
+                <a href="#process" class="hover:text-emerald transition">Process</a>
+                <a href="#works" class="hover:text-emerald transition">Our Works</a>
+                <a href="#about" class="hover:text-emerald transition">About</a>
+            </div>
+
+            <a href="#contact" class="hidden md:block bg-white text-black hover:bg-emerald hover:text-white px-6 py-2.5 rounded-full font-bold transition duration-300 text-sm">
+                Book a Demo
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative pt-40 pb-20 px-6 flex flex-col items-center text-center min-h-[90vh] justify-center overflow-hidden">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-emerald rounded-full mix-blend-screen filter blur-[150px] opacity-20 pointer-events-none"></div>
+
+        <div class="inline-block glass-card px-4 py-2 rounded-full mb-8 border border-emerald/30">
+            <span class="text-emerald text-xs font-bold uppercase tracking-widest flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald animate-pulse"></span> Deploying AI Agents in 2026
+            </span>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight tracking-tight mb-6 max-w-4xl z-10">
+            Automate the Conversation,<br>
+            <span class="gradient-text">Accelerate the Growth</span>
+        </h1>
+        
+        <p class="text-lg text-gray-400 mb-10 max-w-2xl font-light z-10">
+            We build and deploy autonomous AI Voice & Chat agents that qualify leads, close sales, and handle customer support while you sleep.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 z-10">
+            <a href="#contact" class="bg-emerald hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold transition shadow-[0_0_30px_rgba(16,185,129,0.3)] text-lg">
+                Build Your Agent
+            </a>
+            <a href="#works" class="bg-white/5 hover:bg-white/10 border border-white/10 text-white px-8 py-4 rounded-xl font-bold transition text-lg backdrop-blur-sm">
+                View Case Studies
+            </a>
+        </div>
+    </section>
+
+    <div class="marquee reveal">
+        <div class="marquee-content text-gray-500 font-bold tracking-widest uppercase text-sm flex items-center">
+            <span>Seamlessly Integrates With</span>
+            <span>•</span><span>Salesforce</span>
+            <span>•</span><span>HubSpot</span>
+            <span>•</span><span>Shopify</span>
+            <span>•</span><span>Zapier</span>
+            <span>•</span><span>GoHighLevel</span>
+            <span>•</span><span>WordPress</span>
+            <span>•</span><span>Salesforce</span>
+            <span>•</span><span>HubSpot</span>
+            <span>•</span><span>Shopify</span>
+            <span>•</span><span>Zapier</span>
+            <span>•</span><span>GoHighLevel</span>
+            <span>•</span><span>WordPress</span>
+        </div>
+    </div>
+
+    <section class="max-w-7xl mx-auto px-6 py-32 reveal">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">The Old Way vs. The <span class="text-emerald">TezReply</span> Way</h2>
+        </div>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-10 border-red-500/20">
+                <h3 class="text-xl font-bold text-red-400 mb-6 flex items-center gap-2"><span class="text-2xl">❌</span> Human Teams</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex items-start gap-3"><span>▪</span> Missed calls after 5 PM and on weekends.</li>
+                    <li class="flex items-start gap-3"><span>▪</span> High payroll, training costs, and turnover.</li>
+                    <li class="flex items-start gap-3"><span>▪</span> Leads go cold waiting for a response.</li>
+                </ul>
+            </div>
+            <div class="glass-card p-10 border-emerald/40 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-emerald/10 blur-[50px]"></div>
+                <h3 class="text-xl font-bold text-emerald mb-6 flex items-center gap-2"><span class="text-2xl">✅</span> AI Automation</h3>
+                <ul class="space-y-4 text-white">
+                    <li class="flex items-start gap-3"><span class="text-emerald">✓</span> Answers every call & text instantly, 24/7.</li>
+                    <li class="flex items-start gap-3"><span class="text-emerald">✓</span> One-time setup, infinitely scalable.</li>
+                    <li class="flex items-start gap-3"><span class="text-emerald">✓</span> Books meetings directly into your calendar.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-deep py-32 relative reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-emerald font-bold tracking-widest text-sm uppercase mb-2">Our Capabilities</h2>
+            <h3 class="text-4xl font-bold text-white mb-16">Intelligence at Every Touchpoint</h3>
+
+            <div class="space-y-8">
+                <div class="glass-card p-10 grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-8">
+                        <div class="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center text-3xl mb-6">🎙️</div>
+                        <h4 class="text-2xl font-bold text-white mb-4">AI Voice Receptionists</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">Hyper-realistic conversational AI that handles inbound customer service queries and executes high-volume outbound sales campaigns with zero latency.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">Custom Voice Cloning</span>
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">Live Call Transfer</span>
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">Objection Handling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-10 grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-8">
+                        <div class="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center text-3xl mb-6">💬</div>
+                        <h4 class="text-2xl font-bold text-white mb-4">Omnichannel Chat Automation</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">We turn your DMs into sales funnels. Engage prospects natively on Instagram, WhatsApp, and Facebook with AI that understands context and closes deals.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">Lead Qualification</span>
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">WhatsApp API</span>
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">Automated Follow-ups</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-10 grid md:grid-cols-12 gap-8 items-center">
+                    <div class="md:col-span-8">
+                        <div class="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center text-3xl mb-6">🌐</div>
+                        <h4 class="text-2xl font-bold text-white mb-4">Smart SaaS Websites</h4>
+                        <p class="text-gray-400 leading-relaxed mb-6">Beautiful, high-speed landing pages engineered for conversion. We embed our AI tools directly into your site to create a seamless user experience.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">SEO Optimized</span>
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">Analytics Dashboards</span>
+                            <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs">CRM Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="max-w-7xl mx-auto px-6 py-32 reveal">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">How We Deploy Your Team</h2>
+            <p class="text-gray-400">From concept to launch in less than 14 days.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 relative">
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-white/10 -z-10 -translate-y-1/2"></div>
+            
+            <div class="bg-[#050B14] p-6 border border-white/10 rounded-2xl relative">
+                <div class="w-12 h-12 rounded-full bg-emerald text-white flex items-center justify-center font-bold text-xl mb-6 shadow-[0_0_15px_rgba(16,185,129,0.5)]">1</div>
+                <h4 class="text-xl font-bold mb-3">Discovery & Audit</h4>
+                <p class="text-gray-400 text-sm">We analyze your sales process, map your funnels, and identify exactly where AI can replace manual tasks.</p>
+            </div>
+            
+            <div class="bg-[#050B14] p-6 border border-white/10 rounded-2xl relative">
+                <div class="w-12 h-12 rounded-full bg-emerald text-white flex items-center justify-center font-bold text-xl mb-6 shadow-[0_0_15px_rgba(16,185,129,0.5)]">2</div>
+                <h4 class="text-xl font-bold mb-3">Build & Train</h4>
+                <p class="text-gray-400 text-sm">We develop the custom LLMs, train the agents on your company data/FAQs, and set up CRM webhooks.</p>
+            </div>
+            
+            <div class="bg-[#050B14] p-6 border border-emerald/50 rounded-2xl relative">
+                <div class="w-12 h-12 rounded-full bg-emerald text-white flex items-center justify-center font-bold text-xl mb-6 shadow-[0_0_15px_rgba(16,185,129,0.5)]">3</div>
+                <h4 class="text-xl font-bold mb-3">Launch & Scale</h4>
+                <p class="text-gray-400 text-sm">We push the systems live. You monitor the dashboard as leads are qualified and appointments are booked.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="bg-white/5 py-32 border-y border-white/5 reveal">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-4">Proven Results.</h2>
+                <p class="text-gray-400">Case studies from our latest deployments.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="glass-card overflow-hidden group">
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative p-8 flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-emerald/10 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                        <h4 class="text-2xl font-bold text-white relative z-10">Real Estate Agency</h4>
+                        <p class="text-emerald font-bold text-sm relative z-10">Voice Agent AI</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid grid-cols-2 gap-4 mb-4 pb-4 border-b border-white/10">
+                            <div>
+                                <p class="text-3xl font-bold text-white mb-1">500+</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-widest">Calls/Day</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold text-white mb-1">45%</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-widest">Conversion</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">Deployed an outbound caller that pre-qualified buyer leads and booked home viewings directly into the broker's calendar.</p>
+                    </div>
+                </div>
+
+                <div class="glass-card overflow-hidden group">
+                    <div class="h-48 bg-gradient-to-br from-slate-800 to-slate-900 relative p-8 flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-emerald/10 opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                        <h4 class="text-2xl font-bold text-white relative z-10">E-Commerce Brand</h4>
+                        <p class="text-emerald font-bold text-sm relative z-10">WhatsApp Chatbot Funnel</p>
+                    </div>
+                    <div class="p-8">
+                        <div class="grid grid-cols-2 gap-4 mb-4 pb-4 border-b border-white/10">
+                            <div>
+                                <p class="text-3xl font-bold text-white mb-1">20%</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-widest">Cart Recovery</p>
+                            </div>
+                            <div>
+                                <p class="text-3xl font-bold text-white mb-1">24/7</p>
+                                <p class="text-xs text-gray-500 uppercase tracking-widest">Support Sync</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-400">Built a conversational checkout flow that recovered abandoned carts and handled shipping inquiries autonomously.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="max-w-7xl mx-auto px-6 py-32 reveal">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            
+            <div>
+                <h2 class="text-emerald font-bold tracking-widest text-sm uppercase mb-2">About TezReply</h2>
+                <h3 class="text-4xl font-bold mb-6">Built for Founders, by Engineers.</h3>
+                <p class="text-gray-400 leading-relaxed mb-6">
+                    We saw businesses bottlenecking because humans simply can't handle digital volume at scale. TezReply was founded to bridge the gap between cutting-edge AI architecture and real-world revenue generation. 
+                </p>
+                <p class="text-gray-400 leading-relaxed mb-8">
+                    We are your technical partners. We don't just sell software; we build custom digital employees that integrate perfectly into your existing ecosystem.
+                </p>
+                
+                <div class="p-6 rounded-2xl bg-white/5 border border-white/10 border-l-4 border-l-emerald">
+                    <p class="text-sm italic text-gray-300">"TezReply fundamentally changed how we handle volume. Their agents are so natural, clients think they are talking to my top sales rep."</p>
+                    <p class="mt-4 font-bold text-white text-sm">— Dellon, Founder at NexaPulse</p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="glass-card p-6 flex gap-4">
+                    <div class="w-12 h-12 rounded-full bg-slate-700 flex-shrink-0 overflow-hidden"><img src="https://i.pravatar.cc/150?img=60" alt="Alex"></div>
+                    <div>
+                        <div class="flex text-emerald text-sm mb-1">★★★★★</div>
+                        <p class="text-sm text-gray-300 italic mb-2">"The smart website they built integrated perfectly with our HubSpot CRM. Instant lead qualification."</p>
+                        <p class="text-xs font-bold text-gray-500">Alex M. - SaaS Director</p>
+                    </div>
+                </div>
+                <div class="glass-card p-6 flex gap-4 ml-8">
+                    <div class="w-12 h-12 rounded-full bg-slate-700 flex-shrink-0 overflow-hidden"><img src="https://i.pravatar.cc/150?img=47" alt="Sarah"></div>
+                    <div>
+                        <div class="flex text-emerald text-sm mb-1">★★★★★</div>
+                        <p class="text-sm text-gray-300 italic mb-2">"We fired our answering service. The TezReply Voice AI handles 3x the calls for a fraction of the price."</p>
+                        <p class="text-xs font-bold text-gray-500">Sarah J. - Clinic Owner</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="bg-emerald/10 py-32 border-t border-emerald/20 relative reveal">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="glass-card p-10 md:p-16 relative overflow-hidden text-center">
+                <div class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald to-teal-400"></div>
+                
+                <h2 class="text-4xl font-bold text-white mb-4">Ready to Automate?</h2>
+                <p class="text-gray-400 mb-10 max-w-lg mx-auto">Skip the generic agencies. Partner with TezReply to build AI systems that actually generate revenue. Fill out the form to get a custom roadmap.</p>
+                
+                <form id="leadForm" class="grid md:grid-cols-2 gap-6 text-left max-w-2xl mx-auto">
+                    <div class="md:col-span-1">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 block">Full Name</label>
+                        <input type="text" id="nameInput" required class="w-full p-4 bg-black/40 border border-white/10 rounded-xl text-white focus:border-emerald focus:outline-none transition">
+                    </div>
+                    <div class="md:col-span-1">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 block">Business Email</label>
+                        <input type="email" id="emailInput" required class="w-full p-4 bg-black/40 border border-white/10 rounded-xl text-white focus:border-emerald focus:outline-none transition">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2 block">What do you want to automate?</label>
+                        <select class="w-full p-4 bg-black/40 border border-white/10 rounded-xl text-white focus:border-emerald focus:outline-none transition appearance-none">
+                            <option>Voice AI & Calling</option>
+                            <option>WhatsApp/Instagram Chat</option>
+                            <option>Smart Website Creation</option>
+                            <option>Full Business Audit</option>
+                        </select>
+                    </div>
+                    <div class="md:col-span-2 mt-4">
+                        <button type="submit" class="w-full bg-emerald hover:bg-emerald-600 text-white font-bold text-lg py-5 rounded-xl transition shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                            Request Your Free Demo
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#03060A] pt-20 pb-10 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12 mb-16">
+            <div class="md:col-span-1">
+                <div class="text-2xl font-bold tracking-tight text-white flex items-center gap-2 mb-6">
+                    <div class="w-6 h-6 bg-emerald rounded flex items-center justify-center text-white text-xs">T</div>
+                    Tez<span class="font-light text-gray-500">Reply</span>
+                </div>
+                <p class="text-sm text-gray-500 leading-relaxed">The premier AI Automation Agency. Building intelligent voice, chat, and web systems for high-growth companies.</p>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Solutions</h4>
+                <ul class="space-y-4 text-sm text-gray-500">
+                    <li><a href="#" class="hover:text-emerald transition">Inbound Voice AI</a></li>
+                    <li><a href="#" class="hover:text-emerald transition">Outbound Sales Agents</a></li>
+                    <li><a href="#" class="hover:text-emerald transition">WhatsApp Funnels</a></li>
+                    <li><a href="#" class="hover:text-emerald transition">Smart SaaS Sites</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Agency</h4>
+                <ul class="space-y-4 text-sm text-gray-500">
+                    <li><a href="#about" class="hover:text-emerald transition">About Us</a></li>
+                    <li><a href="#works" class="hover:text-emerald transition">Case Studies</a></li>
+                    <li><a href="#process" class="hover:text-emerald transition">Our Process</a></li>
+                    <li><a href="#contact" class="hover:text-emerald transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6 uppercase text-xs tracking-widest">Legal</h4>
+                <ul class="space-y-4 text-sm text-gray-500">
+                    <li><a href="#" class="hover:text-emerald transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-emerald transition">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto text-center border-t border-white/5 pt-8 text-xs text-gray-600">
+            &copy; 2026 TezReply AI Automation Agency. All rights reserved. Designed for the future.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Scroll Reveal Animation Logic
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealOnScroll = () => {
+                const windowHeight = window.innerHeight;
+                revealElements.forEach(el => {
+                    const elementTop = el.getBoundingClientRect().top;
+                    const revealPoint = 100; // Trigger point
+                    
+                    if (elementTop < windowHeight - revealPoint) {
+                        el.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Trigger once on load
+
+            // 2. Form Submission Interceptor
+            const leadForm = document.getElementById('leadForm');
+            leadForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('nameInput').value;
+                alert(`System initialized for ${name}. The TezReply team will contact you shortly to begin your AI deployment.`);
+                leadForm.reset();
+            });
+        });
+    </script>
+
+</body>
+</html>
